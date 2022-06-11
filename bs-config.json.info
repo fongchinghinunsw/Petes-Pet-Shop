@@ -1,0 +1,7 @@
+This tells lite-server which files to include in our base directory.
+We add the ./src directory for our website files and ./build/contracts
+directory for the contract artifacts.
+
+"server": {
+    "baseDir": ["./src", "./build/contracts"]
+}
