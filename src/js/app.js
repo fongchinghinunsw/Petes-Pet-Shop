@@ -31,8 +31,8 @@ App = {
     if (window.ethereum) {
       App.web3Provider = window.ethereum;
       try {
-        // We also need to explicitly request access to the accounts with
-        // ethereum.enable()
+        // We also need to explicitly request access to the accounts
+        // ethereum.enable() is the old way, use ethereum.request() instead
         await window.ethereum.request({ method: "eth_requestAccounts" });
       } catch (error) {
         // User denied account access...
